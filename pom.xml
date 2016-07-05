@@ -16,6 +16,21 @@
     </dependency>
   </dependencies>
   
+		<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.5.3</version>
+				<configuration>
+					<descriptors>
+						<descriptor>src/assembly/abc.xml</descriptor>
+					</descriptors>
+					<tarLongFileMode>posix</tarLongFileMode>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+  
   <distributionManagement>
   <snapshotRepository>
     <id>test_project</id>
